@@ -214,7 +214,7 @@ No `.env` (ou use outra forma de gerenciar segredos) você precisa de algumas va
 
   - [LinkedIn](https://www.linkedin.com/in/levir-menezes-dev/)
 
-  - [E-mail](levirmenezes@gmail.com)
+  - [E-mail](mailto:levirmenezes@gmail.com)
 
 ---
 
