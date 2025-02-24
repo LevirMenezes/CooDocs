@@ -1,0 +1,35 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 400px;
+    margin-top: 50px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #6f42c1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .btn-primary {
+    width: 100%;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  a {
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a:hover {
+    text-decoration: underline;
+  }

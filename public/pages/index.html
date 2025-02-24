@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CooDocs - Colabore em Tempo Real</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+  <!-- Navbar fixa -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid px-4">
+      <a href="/logout">
+        <img src="../images//icons8-sair-64.png" style="width: 40px; height: 40px; margin-left: -20px; margin-right: 20px;" alt="icone de sair">
+      </a>
+      <a class="navbar-brand" href="#">CooDocs</a>
+      <div class="ms-auto">
+        <!-- Mostra total de usuários online -->
+        <span id="usuarios-conectados" class="navbar-text">Usuários online: 0</span>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-main mx-auto">
+    <div class="header">
+      <h1>CooDocs</h1>
+      <p>Colaboração em tempo real, simples e eficaz.</p>
+    </div>
+
+    <!-- Área para mensagens de erro -->
+    <div id="error-message" class="error-message" style="display: none;">
+      <p>Mensagem de erro aqui</p>
+    </div>
+
+    <!-- Lista de documentos -->
+    <div id="lista-documentos" class="list-group mb-4">
+      <!-- Documentos adicionados aparecerão aqui -->
+    </div>
+
+    <!-- Formulário para adicionar novo documento -->
+    <form id="form-adiciona-documento" class="row g-3">
+      <div class="col-md-8">
+        <input type="text" class="form-control" id="input-documento" placeholder="Nome do documento..." required />
+      </div>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-primary w-100">Adicionar Documento</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./socket.io/socket.io.js"></script>
+  <script src="/socket/socket-front-index.js" type="module"></script>
+  <script src="../js/index.js" type="module"></script>
+</body>
+</html>

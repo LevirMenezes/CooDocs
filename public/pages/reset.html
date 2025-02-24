@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CooDocs - Redefinir Senha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/reset.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Redefinir Senha</h1>
+    <form id="form-reset" method="POST" action="/reset">
+      <!-- O token vem da query, então colocamos num campo hidden -->
+      <input type="hidden" name="token" id="token" />
+
+      <div class="mb-3">
+        <label for="senha" class="form-label">Nova Senha</label>
+        <input type="password" class="form-control" name="senha" id="senha" required/>
+      </div>
+      <div class="mb-3">
+        <label for="confirmar-senha" class="form-label">Confirmar Nova Senha</label>
+        <input type="password" class="form-control" name="confirmar-senha" id="confirmar-senha" required/>
+      </div>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+  </div>
+
+  <script>
+    // Pega o token da URL e coloca no campo hidden
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+    document.getElementById("token").value = token;
+  </script>
+</body>
+</html>

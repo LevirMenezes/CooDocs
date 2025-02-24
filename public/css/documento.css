@@ -1,0 +1,64 @@
+body {
+    background-color: #1f2021;
+    font-family: Arial, sans-serif;
+    margin-bottom: 60px; /* Espaço p/ navbar fixa */
+  }
+  .navbar {
+    background-color: #6f42c1; /* Cor roxa da marca */
+  }
+  .navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+  }
+  .navbar-text {
+    color: #fff !important;
+    font-weight: 500;
+  }
+  .editor-container {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  #status-indicador {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 0.9rem;
+    color: #b5b5b6;
+  }
+  #titulo-documento {
+    color: #b5b5b6
+  }
+  .header h2 {
+    color: #b5b5b6
+  }
+  textarea {
+    height: 400px;
+    resize: none;
+    color: #fff;
+    background: #121212;
+    transition: box-shadow 0.3s;
+  }
+  #editor-texto {
+    color: #fff;
+    background: #121212;
+    border: 1px solid #555555;
+  }
+  textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  /* Estilo para o ícone de edição */
+  #icone-editar-titulo {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #6f42c1;
+  }
+  #input-editar-titulo {
+    display: none; /* Oculto por padrão, será exibido ao clicar no ícone */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    color: #fff;
+    font-style: bold;
+    background-color: #121212;
+  }
