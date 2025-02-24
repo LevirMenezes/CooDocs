@@ -141,6 +141,7 @@ No `.env` (ou use outra forma de gerenciar segredos) você precisa de algumas va
 ├── public/
 │   ├── css/
 │   ├── js/
+│   ├── images/
 │   ├── pages/
 │   ├── socket/
 │   └── ...
@@ -162,6 +163,7 @@ No `.env` (ou use outra forma de gerenciar segredos) você precisa de algumas va
 
 - **public/**: Pasta de arquivos estáticos, dividida em:
   - **css/**: Arquivos de estilo (ex.: `style.css`).
+  - **images/**: Images, icons (ex.: `icon.icon, icon.png`).
   - **js/**: Scripts do lado do cliente (ex.: `index.js`).
   - **pages/**: Páginas HTML (ex.: `index.html`, `login.html`, etc.).
   - **socket/**: Scripts específicos de Socket.io para o front-end.
